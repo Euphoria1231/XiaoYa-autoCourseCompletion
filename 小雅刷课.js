@@ -158,11 +158,6 @@
         p.style.color = color;
         answerList.appendChild(p);
     }
-    const observer = new MutationObserver(() => {
-        if (document.querySelector(".ant-layout")) {
-            createWindow();
-            observer.disconnect();
-        }
-    });
+    createWindow();
     observer.observe(document.body, { childList: true, subtree: true });
 })();
