@@ -159,5 +159,4 @@
         answerList.appendChild(p);
     }
     createWindow();
-    observer.observe(document.body, { childList: true, subtree: true });
 })();
